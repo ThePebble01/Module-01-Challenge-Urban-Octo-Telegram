@@ -20,10 +20,6 @@ https://thepebble01.github.io/Module-01-Challenge-Urban-Octo-Telegram/
 
 ## Credits
 
-<u>Resources</u>
-
-Underlines in Markdown (no irony on my part): https://www.ionos.com/digitalguide/websites/web-development/markdown/#:~:text=Text%20can't%20be%20underlined,avoid%20confusing%20the%20two%20uses.
-
 Semantic Elements: https://www.w3schools.com/html/html5_semantic_elements.asp
 
 ## License
