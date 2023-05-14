@@ -8,6 +8,10 @@ body {
   background-color: #d9dcd6;
 }
 
+p {
+  font-size: 16px;
+}
+
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -24,7 +28,12 @@ header h1 {
 header h1 .seo {
   color: #d9dcd6;
 }
+/* ==========================================================================
+   Positioning Links To The Right Of A Header Without Flexbox
+   ========================================================================== */
 
+/*This block essentially positions the list of links to the right 
+of the header section and adds "asethetic" space around them.*/
 header nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -34,10 +43,15 @@ header nav {
 }
 
 header nav ul {
+  /*Removes the bullet points from the link list which would
+  be distracting to see when the intent of that "list" is to 
+  act as a container for the links.*/
   list-style-type: none;
 }
 
 header nav ul li {
+  /*Positions the list items horizontally so the links don't 
+  cause the navigation bar to take up too much space.*/
   display: inline-block;
   margin-left: 25px;
 }
@@ -47,10 +61,6 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-size: 16px;
-}
-
 .hero {
   height: 800px;
   width: 100%;
@@ -58,6 +68,30 @@ p {
   background-image: url("../images/digital-marketing-meeting.jpg");
   background-size: cover;
   background-position: center;
+}
+
+main {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.horiseon-content {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.horiseon-content h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.horiseon-content img {
+  max-height: 200px;
 }
 
 .float-left {
@@ -70,15 +104,14 @@ p {
   margin-left: 25px;
 }
 
-main {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}
-
+/* Positions the benefits described by Horiseon's services 
+to the right, allowing the main to highlight the services 
+offered.*/
 aside {
   margin-right: 20px;
   padding: 20px;
+  /*For some resolutions, clear controls how the rest of the
+  page's content positions itself around the aside container.*/
   clear: both;
   float: right;
   width: 20%;
@@ -103,32 +136,10 @@ aside {
   max-width: 150px;
 }
 
-.horiseon-content {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-.horiseon-content img {
-  max-height: 200px;
-}
-
-.horiseon-content h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
 footer {
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-}
-
-footer h2 {
-  font-size: 20px;
 }
